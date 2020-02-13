@@ -21,9 +21,9 @@
   "author": "anyushu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LAMP-Develop/kyoto-masters/issues"
+    "url": "https://github.com/Anyushu/nakane-blog/issues"
   },
-  "homepage": "https://github.com/LAMP-Develop/kyoto-masters#readme",
+  "homepage": "https://github.com/Anyushu/nakane-blog#readme",
   "dependencies": {
     "highlight.js": "^9.18.1",
     "iscroll": "^5.2.0",
