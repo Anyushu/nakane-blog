@@ -2,11 +2,11 @@
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
-  background-image: url('../images/bg_mv.jpg');
+  background-image: url('../images/bg_mv.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  height: 350px;
 
   @include media-md() {
     background-position: 65% center;
@@ -14,7 +14,7 @@
 
   .inner {
     box-sizing: border-box;
-    padding-right: 40%;
+    padding-left: 40%;
     @include media-lg() {
       padding: 0;
     }

@@ -554,10 +554,12 @@
       color: black;
       opacity: 0.75; }
 
-/* main */
+/* variables */
 /* font-size */
 /* colors */
 /* breakpoints */
+/* mixin */
+/* main */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -647,7 +649,7 @@ h6 {
 
 mark {
   background-color: #ff0;
-  color: #3E3A39; }
+  color: #535353; }
 
 small {
   font-size: 80%; }
@@ -766,7 +768,7 @@ textarea {
 body {
   font-family: 'Lato', 'Noto Sans JP', 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif !important;
   font-size: 100%;
-  color: #3E3A39;
+  color: #535353;
   background-color: #fff; }
 
 button:focus,
@@ -1073,7 +1075,7 @@ input:focus {
     display: inline-block;
     width: 50px;
     height: 1px;
-    background-color: #3E3A39;
+    background-color: #060a2d;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -1083,16 +1085,16 @@ input:focus {
   color: #337fbc; }
 
 .color-blue-2 {
-  color: #3E3A39; }
+  color: #060a2d; }
 
 .bg-blue {
   background-color: #337fbc; }
 
 .color-sky {
-  color: #3E3A39; }
+  color: #060a2d; }
 
 .bg-sky {
-  background-color: #3E3A39; }
+  background-color: #060a2d; }
 
 .color-gray-a {
   color: #A5A5A5; }
@@ -1206,7 +1208,7 @@ input:focus {
   line-height: 1;
   font-size: 1rem;
   color: #fff;
-  background-color: #3E3A39;
+  background-color: #060a2d;
   padding: 20px 0;
   text-align: center; }
 
@@ -1227,7 +1229,7 @@ input:focus {
   border: solid 1px #fff; }
   .btn-3:hover {
     background-color: #fff;
-    color: #3E3A39; }
+    color: #060a2d; }
 
 .sns-share {
   display: flex;
@@ -1506,17 +1508,17 @@ footer img {
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
-  background-image: url("../images/bg_mv.jpg");
+  background-image: url("../images/bg_mv.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px; }
+  height: 350px; }
   @media (max-width: 768px) {
     #mv {
       background-position: 65% center; } }
   #mv .inner {
     box-sizing: border-box;
-    padding-right: 40%; }
+    padding-left: 40%; }
     @media (max-width: 980px) {
       #mv .inner {
         padding: 0; } }
@@ -1879,13 +1881,13 @@ footer img {
     box-sizing: border-box;
     padding: 0.8rem;
     background-color: #f5f5f5;
-    border-left: solid 3px #3E3A39;
+    border-left: solid 3px #060a2d;
     margin: 2rem auto 1.5rem; }
   .post-inner h3 {
     font-size: 1.1rem;
     margin: 2rem auto 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: solid 1px #3E3A39;
+    border-bottom: solid 1px #060a2d;
     box-sizing: border-box;
     background-color: #fff; }
   .post-inner h4 {
@@ -1933,7 +1935,7 @@ footer img {
       content: counter(item) ".";
       padding-right: 0.5em;
       font-weight: bold;
-      color: #3E3A39; }
+      color: #060a2d; }
   .post-inner ol > li:last-child,
   .post-inner ul > li:last-child {
     margin-bottom: 0; }
@@ -2139,11 +2141,11 @@ footer img {
   overflow: hidden;
   box-sizing: border-box;
   width: 100% !important;
-  border: 2px solid #3E3A39 !important;
+  border: 2px solid #060a2d !important;
   margin-bottom: 2rem;
   background-color: #fff; }
   #toc_container p.toc_title {
-    background-color: #3E3A39;
+    background-color: #060a2d;
     color: #fff;
     padding: 0.5rem 1rem; }
     #toc_container p.toc_title a {
