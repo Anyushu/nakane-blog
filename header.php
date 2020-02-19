@@ -55,6 +55,7 @@ foreach ($categories as $kye => $category) { ?>
 </div>
 </header>
 <!-- ヘッダー終了 -->
+<div class="pc-only"><?php get_template_part('menu'); ?></div>
 <?php
 if (!is_home() && !is_front_page()) {
     if (function_exists('yoast_breadcrumb')) {
@@ -62,6 +63,5 @@ if (!is_home() && !is_front_page()) {
     }
 }
 ?>
-<div class="pc-only"><?php get_template_part('menu'); ?></div>
 <!-- メインコンテンツ -->
 <main>
