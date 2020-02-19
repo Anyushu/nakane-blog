@@ -2,19 +2,19 @@
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
-  background-image: url('../images/bg_mv.png');
+  background-image: url('../images/mv.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
 
   @include media-md() {
-    background-position: 65% center;
+    background-image: url('../images/mv_sp.jpg');
   }
 
   .inner {
     box-sizing: border-box;
-    padding-left: 40%;
+    padding-left: 50%;
     @include media-lg() {
       padding: 0;
     }

@@ -20,7 +20,7 @@ get_header(); ?>
 
 <section id="new-posts" class="sec">
 <div class="wrap">
-<h2 class="ttl2 txt-c"><span class="color-sky d-block">新着記事</span><span>RECENT POSTS</span></h2>
+<h2 class="ttl2 txt-c"><span class="color-primary d-block">新着記事</span><span>RECENT POSTS</span></h2>
 <ul class="post-list mb-2">
 <?php
 $args = [
@@ -49,7 +49,7 @@ $category = get_the_category();
 </div>
 <div class="txt">
 <?php foreach ($category as $key => $val): ?>
-<span class="d-i-block color-white bg-sky"><?php echo $val->cat_name; ?></span>
+<span class="d-i-block color-white bg-primary"><?php echo $val->cat_name; ?></span>
 <?php break; endforeach; ?>
 <h3><?php echo $t; ?></h3>
 <div class="meta">
@@ -68,7 +68,7 @@ $category = get_the_category();
 
 <section id="ranking" class="sec bg-gray-a">
 <div class="wrap">
-<h2 class="ttl2"><span class="color-sky d-block">今週の人気ランキング</span><span>RANKING</span></h2>
+<h2 class="ttl2"><span class="color-primary d-block">今週の人気ランキング</span><span>RANKING</span></h2>
 <ul class="post-list ranking-list">
 <?php
 $no = 1;
@@ -95,7 +95,7 @@ $category = get_the_category();
 </div>
 <div class="txt">
 <?php foreach ($category as $key => $val): ?>
-<span class="d-i-block color-white bg-sky"><?php echo $val->cat_name; ?></span>
+<span class="d-i-block color-white bg-primary"><?php echo $val->cat_name; ?></span>
 <?php break; endforeach; ?>
 <h3><?php echo $t; ?></h3>
 <div class="meta">

@@ -45,7 +45,7 @@ $category = get_the_category();
 <div class="txt">
 <?php foreach ($category as $key => $val):
 if ($val->parent): ?>
-<span class="d-i-block color-white bg-sky mr-05"><?php echo $val->cat_name; ?></span>
+<span class="d-i-block color-white bg-primary mr-05"><?php echo $val->cat_name; ?></span>
 <?php endif;
 endforeach; ?>
 <h3><?php echo $t; ?></h3>

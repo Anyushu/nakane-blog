@@ -31,9 +31,9 @@ input:focus {
 
 .sec {
   box-sizing: border-box;
-  padding: 60px 0;
+  padding: 90px 0;
   @include media-lg() {
-    padding: 30px 0;
+    padding: 45px 0;
   }
 }
 
@@ -400,40 +400,52 @@ input:focus {
   }
 }
 
-.color-blue {
-  color: #337fbc;
+.color-body {
+  color: $body;
 }
 
-.color-blue-2 {
-  color: $primary;
+.bg-body {
+  background-color: $body;
+}
+
+.color-secondary {
+  color: $secondary;
+}
+
+.bg-secondary {
+  background-color: $secondary;
+}
+
+.color-blue {
+  color: #337fbc;
 }
 
 .bg-blue {
   background-color: #337fbc;
 }
 
-.color-sky {
+.color-primary {
   color: $primary;
 }
 
-.bg-sky {
+.bg-primary {
   background-color: $primary;
 }
 
 .color-gray-a {
-  color: #A5A5A5;
+  color: $gray-1;
 }
 
 .bg-gray-a {
-  background-color: #F2F2F3;
+  background-color: $gray-1;
 }
 
 .color-gray-b {
-  color: #f5f5f5;
+  color: $gray-2;
 }
 
 .bg-gray-b {
-  background-color: #f5f5f5;
+  background-color: $gray-2;
 }
 
 .color-white {
@@ -514,7 +526,7 @@ input:focus {
 
     &:hover {
       color: #fff;
-      background-color: #3E3A39;
+      background-color: $primary;
     }
   }
 
@@ -525,7 +537,7 @@ input:focus {
     margin: 0 0.5rem;
     padding: 0.4rem 0.7rem;
     color: #fff;
-    background-color: #3E3A39;
+    background-color: $primary;
   }
 }
 

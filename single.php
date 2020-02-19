@@ -3,14 +3,6 @@ $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header();
 
-$lang = ICL_LANGUAGE_CODE;
-if ($lang === 'en') {
-} elseif ($lang === 'ko') {
-} elseif ($lang === 'zh-hans') {
-} elseif ($lang === 'zh-hant') {
-} else {
-}
-
 if (have_posts()): the_post();
 
 // 記事情報
@@ -35,9 +27,9 @@ $tags = get_the_tags();
 <article id="main-content" class="post-main">
 <h2 class="postttl"><?php echo $t; ?></h2>
 <div class="meta">
-<time class="color-sky" datetime="<?php echo $time; ?>"><?php the_modified_time('Y.m.d'); ?></time>
+<time class="color-primary" datetime="<?php echo $time; ?>"><?php the_modified_time('Y.m.d'); ?></time>
 <?php foreach ($category as $key => $val): ?>
-<span class="ml-1 single-cat color-white bg-sky"><?php echo $val->cat_name; ?></span>
+<span class="ml-1 single-cat color-white bg-primary"><?php echo $val->cat_name; ?></span>
 <?php endforeach; ?>
 </div>
 <div class="i-catch">
@@ -46,70 +38,7 @@ $tags = get_the_tags();
 
 <!-- メインコンテンツ -->
 <div class="post-inner mb-3">
-<?php for ($i=1; $i <= 5; $i++): ?>
-<?php if (get_field('h_0'.$i)): ?>
-<h2><?php echo get_field('h_0'.$i); ?></h2>
-<?php if (get_field('img_0'.$i)): ?>
-<img src="<?php echo get_field('img_0'.$i); ?>" alt="<?php echo get_field('h_0'.$i); ?>">
-<?php endif; ?>
-<?php if (get_field('body_0'.$i)): ?>
-<p><?php echo get_field('body_0'.$i); ?></p>
-<?php endif; ?>
-<?php endif; ?>
-<?php endfor; ?>
-
-<!-- 施設概要 -->
-<table>
-<tbody>
-<?php if(get_field('build-name')): ?>
-<tr><th>施設名</th>
-<td><?php the_field('build-name'); ?></td></tr>
-<?php endif; ?>
-<?php if(get_field('address')): ?>
-<tr><th>住所</th>
-<td><?php the_field('address'); ?></td></tr>
-<?php endif; ?>
-<?php if(get_field('tell')): ?>
-<tr><th>電話番号</th>
-<td><?php the_field('tell'); ?></td></tr>
-<?php endif; ?>
-<?php if(get_field('station')): ?>
-<tr><th>最寄り駅</th>
-<td><?php the_field('station'); ?></td></tr>
-<?php endif; ?>
-<?php if(get_field('url')): ?>
-<tr><th>URL</th>
-<td><?php the_field('url'); ?></td></tr>
-<?php endif; ?>
-<?php if(get_field('bas')): ?>
-<tr><th>最寄りバス停</th>
-<td><?php the_field('bas'); ?></td></tr>
-<?php endif; ?>
-<?php if(get_field('time')): ?>
-<tr><th>営業時間</th>
-<td><?php the_field('time'); ?></td></tr>
-<?php endif; ?>
-<?php if(get_field('holiday')): ?>
-<tr><th>定休日</th>
-<td><?php the_field('holiday'); ?></td></tr>
-<?php endif; ?>
-<?php if(get_field('money')): ?>
-<tr><th>入場料</th>
-<td><?php the_field('money'); ?></td></tr>
-<?php endif; ?>
-<?php if(get_field('other')): ?>
-<tr><th>備考</th>
-<td><?php the_field('other'); ?></td></tr>
-<?php endif; ?>
-</tbody>
-</table>
-
-<?php if (get_field('geocode')): ?>
-<div class="gmap">
-<iframe src="https://www.google.com/maps?q=<?php echo get_field('geocode'); ?>&hl=jp&output=embed"></iframe>
-</div>
-<?php endif; ?>
-
+<?php the_content(); ?>
 </div>
 
 <?php if ($tags != ''): ?>
@@ -182,7 +111,7 @@ $category = get_the_category();
 </div>
 <div class="txt">
 <?php foreach ($category as $key => $val): ?>
-<span class="d-i-block color-white bg-sky mr-05"><?php echo $val->cat_name; ?></span>
+<span class="d-i-block color-white bg-primary mr-05"><?php echo $val->cat_name; ?></span>
 <?php endforeach; ?>
 <h3><?php echo $t; ?></h3>
 </div>

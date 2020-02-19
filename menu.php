@@ -2,7 +2,7 @@
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 ?>
-<nav class="pc-nav bg-sky pc-only">
+<nav class="pc-nav bg-secondary pc-only">
 <div class="wrap">
 <ul>
 <?php

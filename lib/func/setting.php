@@ -101,7 +101,7 @@ function arphabet_widgets_init()
     register_sidebar(array(
         'name' => 'サイドバー',
         'id' => 'side-bar',
-        'before_widget' => '<div>',
+        'before_widget' => '<div class="inner">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="side-ttl">',
         'after_title' => '</h3>',
@@ -113,6 +113,7 @@ add_action('widgets_init', 'arphabet_widgets_init');
 function register_my_menu()
 {
     register_nav_menu('header-menu', __('ヘッダーメニュー'));
+    register_nav_menu('footer-menu', __('フッターメニュー'));
 }
 add_action('init', 'register_my_menu');
 

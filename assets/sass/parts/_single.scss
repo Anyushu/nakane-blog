@@ -256,79 +256,6 @@
   }
 }
 
-.gmap {
-  iframe {
-    display: block;
-    border: 0;
-    width: 100%;
-    height: 300px;
-    margin-top: $font-size-base*1.5;
-  }
-}
-/* 開花情報 */
-.slider-for,
-.slider-nav {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  margin: 0;
-}
-
-.slider-nav {
-  margin-bottom: $font-size-base*2;
-}
-
-.post-flowering {
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  @include media-md() {
-    display: block;
-    width: 100%;
-  }
-
-  .flowering {
-    box-sizing: border-box;
-    background-color: $pink;
-    padding: $font-size-base;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    span {
-      &:first-child {
-        margin-right: $font-size-base;
-        font-size: $font-size-base*0.8;
-      }
-
-      &:last-child {
-        margin-left: $font-size-base;
-      }
-
-      img {
-        width: $font-size-base*2;
-        height: auto;
-      }
-    }
-  }
-
-  .migoro {
-    box-sizing: border-box;
-    background-color: $gray-1;
-    padding: $font-size-base;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    span {
-      &:first-child {
-        margin-right: $font-size-base;
-        font-size: $font-size-base*0.8;
-      }
-    }
-  }
-}
-
 .postttl {
   font-size: $font-size-base*1.6;
   font-weight: bold;
@@ -384,6 +311,10 @@
     width: 100%;
     height: 100%;
   }
+}
+
+.wp-block-table {
+  margin: $font-size-base auto;
 }
 
 .youtube-txt p {

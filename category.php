@@ -20,7 +20,7 @@ $cat = get_category($cat_childs);
 $name = $cat->cat_name;
 $slug = $cat->category_nicename;
 ?>
-<li class="d-i-block mb-05 mr-05"><a href="<?php echo $home.'/'.$cat_slug.'/'.$slug; ?>" class="bg-sky color-white"><?php echo $name; ?></a></li>
+<li class="d-i-block mb-05 mr-05"><a href="<?php echo $home.'/'.$cat_slug.'/'.$slug; ?>" class="bg-primary color-white"><?php echo $name; ?></a></li>
 <?php endforeach; ?>
 </ul>
 <?php endif; ?>
@@ -46,7 +46,7 @@ $category = get_the_category();
 </div>
 <div class="txt">
 <?php foreach ($category as $key => $val): ?>
-<span class="d-i-block color-white bg-sky mr-05"><?php echo $val->cat_name; ?></span>
+<span class="d-i-block color-white bg-primary mr-05"><?php echo $val->cat_name; ?></span>
 <?php endforeach; ?>
 <h3><?php echo $t; ?></h3>
 <div class="meta">
@@ -59,7 +59,7 @@ $category = get_the_category();
 <?php else: ?>
 <li>
 <p class="mb-1">まだ記事が投稿されていません。</p>
-<p><a href="<?php echo $home; ?>" class="color-sky">他の記事を探す ></a></p>
+<p><a href="<?php echo $home; ?>" class="color-primary">他の記事を探す ></a></p>
 </li>
 <?php endif; ?>
 </ul>

@@ -31,7 +31,7 @@ $category = get_the_category();
 <img src="<?php echo $i; ?>" srcset="<?php echo $i; ?> 1x,<?php echo $i_l; ?> 2x" alt="<?php echo $t; ?>">
 <div class="txt">
 <?php foreach ($category as $key => $val):　?>
-<span class="d-i-block color-white bg-sky mr-05"><?php echo $val->cat_name; ?></span>
+<span class="d-i-block color-white bg-primary mr-05"><?php echo $val->cat_name; ?></span>
 <?php endforeach; ?>
 <h3><?php echo $t; ?></h3>
 <div class="meta">
@@ -44,7 +44,7 @@ $category = get_the_category();
 <?php else: ?>
 <li>
 <p class="mb-1">まだ記事が投稿されていません。</p>
-<p><a href="<?php echo $home; ?>" class="color-sky">他の記事を探す ></a></p>
+<p><a href="<?php echo $home; ?>" class="color-primary">他の記事を探す ></a></p>
 </li>
 <?php endif; ?>
 </ul>

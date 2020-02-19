@@ -38,7 +38,7 @@ $category = get_the_category();
 </div>
 <div class="txt">
 <?php foreach ($category as $key => $val): ?>
-<span class="d-i-block color-white bg-sky"><?php echo $val->cat_name; ?></span>
+<span class="d-i-block color-white bg-primary"><?php echo $val->cat_name; ?></span>
 <?php break; endforeach; ?>
 <h3><?php echo $t; ?></h3>
 <div class="meta">
