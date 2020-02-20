@@ -178,6 +178,18 @@ a.drawer-menu-item {
   }
 }
 
-.nav-sns a {
-  font-size: 2rem;
+.head-sns ul li {
+  display: inline-block;
+  vertical-align: middle;
+
+  a {
+    color: $primary;
+    font-size: 1.5rem;
+  }
+}
+
+.nav-sns {
+  a {
+    font-size: 1.5rem;
+  }
 }

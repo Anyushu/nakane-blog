@@ -22,6 +22,13 @@ $wp_url = get_template_directory_uri();
 <img src="<?php echo $wp_url; ?>/lib/images/logo.svg" alt="<?php bloginfo('name'); ?>">
 </a>
 </h1>
+<div class="head-sns abs-cr">
+<ul class="color-primary pc-only">
+<li class="mr-1"><a href="https://twitter.com/sentakunote" target="_blank"><i class="fab fa-twitter"></i></a></li>
+<li class="mr-1"><a href="https://www.instagram.com/sentakunote/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+<li><a href="https://www.youtube.com/channel/UCbR9BM2mH_KN_h7tainxYCg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+</ul>
+</div>
 <?php
 if (!is_home() && !is_front_page()) {
     get_search_form();
@@ -50,6 +57,11 @@ foreach ($categories as $kye => $category) { ?>
 <li class="drawer-menu-item mt-2"><a class="drawer-menu-item" href="<?php echo $home; ?>">トップ</a></li>
 <li class="drawer-menu-item"><a class="drawer-menu-item" href="<?php echo $home; ?>/site-map/">サイトマップ</a></li>
 <li class="drawer-menu-item"><a class="drawer-menu-item" href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a></li>
+<li><ul class="nav-sns txt-c color-white">
+<li class="mr-1 d-i-block"><a href="https://twitter.com/sentakunote" target="_blank"><i class="fab fa-twitter"></i></a></li>
+<li class="mr-1 d-i-block"><a href="https://www.instagram.com/sentakunote/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+<li class="d-i-block"><a href="https://www.youtube.com/channel/UCbR9BM2mH_KN_h7tainxYCg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+</ul></li>
 </ul>
 </nav>
 </div>

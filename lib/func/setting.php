@@ -123,3 +123,13 @@ function wpdocs_theme_add_editor_styles()
     add_editor_style('editor-style.css');
 }
 add_action('admin_init', 'wpdocs_theme_add_editor_styles');
+
+// 検索結果制御
+function my_posts_search($search, $wp_query)
+{
+    if ($wp_query->is_search() && $wp_query->is_main_query() && !is_admin()) {
+        $search .= " AND post_type = 'post' ";
+    }
+    return $search;
+}
+add_filter('posts_search', 'my_posts_search', 99, 2);

@@ -53,7 +53,7 @@ $category = get_the_category();
 <?php break; endforeach; ?>
 <h3><?php echo $t; ?></h3>
 <div class="meta">
-<time class="color-gray-a" datetime="<?php echo $time; ?>"><?php echo $time; ?></time>
+<time datetime="<?php echo $time; ?>"><?php echo $time; ?></time>
 </div>
 </div>
 </a>
@@ -98,9 +98,6 @@ $category = get_the_category();
 <span class="d-i-block color-white bg-primary"><?php echo $val->cat_name; ?></span>
 <?php break; endforeach; ?>
 <h3><?php echo $t; ?></h3>
-<div class="meta">
-<time class="color-gray-a" datetime="<?php echo $time; ?>"><?php echo $time; ?></time>
-</div>
 </div>
 </a>
 </li>

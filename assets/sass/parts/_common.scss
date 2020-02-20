@@ -480,7 +480,7 @@ input:focus {
 
     li {
       width: 45%;
-      margin: 0 4.5% 2rem auto;
+      margin: 0 4.5% 2rem 0;
       @include media-lg() {
         width: 100%;
         margin: 0 auto 1rem;
