@@ -9,7 +9,7 @@
 
   li {
     position: relative;
-    width: 30.3333%;
+    width: 31.3333%;
     margin: 0 3% 3% 0;
     text-align: left;
     box-sizing: border-box;
@@ -42,7 +42,7 @@
       position: absolute;
       top: 10px;
       left: 10px;
-      background-color: #fff;
+      background-color: $white;
       display: inline-block;
       vertical-align: top;
       font-size: $font-size-base*0.7;
@@ -126,7 +126,7 @@
           left: -2.5rem;
           width: 5rem;
           height: 5rem;
-          background-color: #fff;
+          background-color: $white;
           transform: rotate(45deg);
         }
       }
@@ -139,14 +139,14 @@
 }
 
 .tag-list {
-  max-width: 768px;
+  max-width: $breakpoint-md;
   margin: 0 auto;
 
   li {
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: $white;
     margin: 0 $font-size-base*0.25 $font-size-base*0.5;
   }
 

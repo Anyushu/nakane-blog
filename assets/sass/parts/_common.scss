@@ -20,20 +20,20 @@ input:focus {
 
 .wrap {
   box-sizing: border-box;
-  max-width: 1100px;
+  max-width: $breakpoint-xlg;
   margin: 0 auto;
   @include media-xlg() {
     width: 100%;
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0 $font-size-base;
   }
 }
 
 .sec {
   box-sizing: border-box;
-  padding: 90px 0;
-  @include media-lg() {
-    padding: 45px 0;
+  padding: $font-size-base*4 0;
+  @include media-xlg() {
+    padding: $font-size-base*3 0;
   }
 }
 
@@ -470,7 +470,7 @@ input:focus {
   @include media-lg() {
     position: relative;
     display: block;
-    margin: 0 auto 2rem;
+    margin: 0 0 2rem;
     width: 100%;
     max-width: 100%;
   }
@@ -483,13 +483,13 @@ input:focus {
       margin: 0 4.5% 2rem 0;
       @include media-lg() {
         width: 100%;
-        margin: 0 auto 1rem;
+        margin: 0 0 1rem;
       }
 
       &:nth-child(2n) {
-        margin: 0 auto 2rem;
+        margin: 0 0 2rem;
         @include media-lg() {
-          margin: 0 auto 1rem;
+          margin: 0 0 1rem;
         }
       }
 
