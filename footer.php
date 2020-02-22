@@ -4,7 +4,7 @@ $wp_url = get_template_directory_uri(); ?>
 </main>
 <!-- メインコンテンツ終了 -->
 <!-- フッター -->
-<footer id="footer" class="sec">
+<footer id="footer" class="sec bg-primary">
 <div class="wrap">
 <h2 class="txt-c"><a href="<?php echo $home; ?>"><img src="<?php echo $wp_url; ?>/lib/images/logo.svg" alt="<?php bloginfo('name'); ?>"></a></h2>
 <div class="txt-c foot-link">

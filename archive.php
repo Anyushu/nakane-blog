@@ -7,17 +7,6 @@ get_header();
 <div class="wrap main-wrap">
 <section id="main-content">
 <h2 class="ttlcat">キーワード：<?php single_cat_title(); ?></h2>
-<?php if (count($cat_child) != 0): ?>
-<ul class="cat-child mb-2">
-<?php foreach ($cat_child as $key => $cat_childs):
-$cat = get_category($cat_childs);
-$name = $cat->cat_name;
-$slug = $cat->category_nicename;
-?>
-<li class="d-i-block mb-05 mr-05"><a href="<?php echo $home.'/'.$cat_slug.'/'.$slug; ?>" class="bg-primary color-white"><?php echo $name; ?></a></li>
-<?php endforeach; ?>
-</ul>
-<?php endif; ?>
 <ul class="post-list">
 <?php
 $paged = get_query_var('paged') ? get_query_var('paged') : 1;

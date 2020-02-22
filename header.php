@@ -11,11 +11,7 @@ $wp_url = get_template_directory_uri();
 </head>
 <body class="drawer drawer--right">
 <!-- ヘッダー -->
-<header id="header" class="<?php if (!is_home() && !is_front_page()) {
-    echo 'txt-l';
-} else {
-    echo 'txt-c';
-} ?>">
+<header id="header">
 <div class="wrap relative">
 <h1 class="txt-c d-i-block">
 <a href="<?php echo $home; ?>">

@@ -9,10 +9,16 @@ get_header(); ?>
 <?php get_search_form(); ?>
 <div class="search-tag mt-2">
 <span class="mr-1">HOT WORD</span>
-<a href="#" class="hot-word">タグ名</a>
-<a href="#" class="hot-word">タグ名</a>
-<a href="#" class="hot-word">タグ名</a>
-<a href="#" class="hot-word">タグ名</a>
+<?php
+$args = [
+  'orderby' => 'count',
+  'order' => 'DESC',
+  'number' => 4,
+];
+$tags = get_tags($args);
+foreach ($tags as $key => $tag): ?>
+<a href="<?php echo get_tag_link($tag->term_id); ?>" class="hot-word"><?php echo $tag->name; ?></a>
+<?php endforeach; ?>
 </div>
 </div>
 </div>
@@ -61,7 +67,7 @@ $category = get_the_category();
 <?php endwhile; wp_reset_query(); ?>
 </ul>
 <div class="txt-c">
-<a href="<?php echo $home; ?>/new-post/" class="btn">すべての記事記事を見る</a>
+<a href="<?php echo $home; ?>/new-post/" class="btn">すべての記事を見る</a>
 </div>
 </div>
 </section>
@@ -102,6 +108,26 @@ $category = get_the_category();
 </a>
 </li>
 <?php $no++; endwhile; wp_reset_query(); ?>
+</ul>
+</div>
+</section>
+<section id="keyword" class="sec">
+<div class="wrap">
+<h2 class="ttl2 txt-c"><span class="color-primary d-block">KEYWORD</span>話題のキーワード</h2>
+<ul class="txt-c tag-list">
+<?php
+$args = array(
+  'orderby' => 'id',
+  'order' => 'DESC',
+  'number' => 20,
+);
+$tags_array = get_tags($args);
+foreach ($tags_array as $key => $tag):
+$tag_name = $tag->name;
+$tag_slug = $tag->slug;
+?>
+<li class="mb-05"><a href="<?php echo $home.'/tag/'.$tag_slug; ?>" class=""><?php echo $tag_name; ?></a></li>
+<?php endforeach; ?>
 </ul>
 </div>
 </section>
