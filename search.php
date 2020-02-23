@@ -30,9 +30,12 @@ $category = get_the_category();
 <a href="<?php echo $p; ?>">
 <img src="<?php echo $i; ?>" srcset="<?php echo $i; ?> 1x,<?php echo $i_l; ?> 2x" alt="<?php echo $t; ?>">
 <div class="txt">
-<?php foreach ($category as $key => $val):　?>
-<span class="d-i-block color-white bg-primary mr-05"><?php echo $val->cat_name; ?></span>
-<?php endforeach; ?>
+<?php
+$posttags = get_the_tags();
+if ($posttags):
+foreach ($posttags as $tag): ?>
+<span class="d-i-block color-white bg-primary"><?php echo $tag->name; ?></span>
+<?php endforeach; endif ?>
 <h3><?php echo $t; ?></h3>
 <div class="meta">
 <time datetime="<?php echo $time; ?>"><?php echo $time; ?></time>

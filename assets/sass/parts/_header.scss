@@ -15,7 +15,23 @@ header {
       text-align: left !important;
     }
 
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+      font-size: $font-size-base*1.1;
+      margin-left: $font-size-base*0.5;
+      font-weight: normal;
+      color: #1e276f;
+
+      @include media-md() {
+        font-size: $font-size-base*0.9;
+      }
+    }
+
     img {
+      display: inline-block;
+      vertical-align: middle;
       width: 287px;
       height: auto;
       @include media-md() {
@@ -153,15 +169,23 @@ header {
   padding: 0;
   color: #fff;
   margin-bottom: 1rem;
+
+  .menu-item {
+    margin-bottom: $font-size-base*0.8;
+
+    a {
+      font-size: $font-size-base*0.8;
+    }
+  }
 }
 
 a.drawer-menu-item {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
 }
 
 .cat-link {
   a.drawer-menu-item {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 }
 

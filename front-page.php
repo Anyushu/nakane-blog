@@ -5,7 +5,7 @@ get_header(); ?>
 <section id="mv" class="sec">
 <div class="wrap">
 <div class="inner">
-<h2 class="mincho w-normal">ここにコピー</h2>
+<h2 class="mincho w-normal">中根クリーニングLaboが運営するBLOG</h2>
 <?php get_search_form(); ?>
 <div class="search-tag mt-2">
 <span class="mr-1">HOT WORD</span>
@@ -54,9 +54,12 @@ $category = get_the_category();
 <img src="<?php echo $i; ?>" srcset="<?php echo $i; ?> 1x,<?php echo $i_l; ?> 2x" alt="<?php echo $t; ?>">
 </div>
 <div class="txt">
-<?php foreach ($category as $key => $val): ?>
-<span class="d-i-block color-white bg-primary"><?php echo $val->cat_name; ?></span>
-<?php break; endforeach; ?>
+<?php
+$posttags = get_the_tags();
+if ($posttags):
+foreach ($posttags as $tag): ?>
+<span class="d-i-block color-white bg-primary"><?php echo $tag->name; ?></span>
+<?php endforeach; endif ?>
 <h3><?php echo $t; ?></h3>
 <div class="meta">
 <time datetime="<?php echo $time; ?>"><?php echo $time; ?></time>
@@ -74,7 +77,7 @@ $category = get_the_category();
 
 <section id="ranking" class="sec bg-gray-a">
 <div class="wrap">
-<h2 class="ttl2"><span class="color-primary d-block">今週の人気ランキング</span><span>RANKING</span></h2>
+<h2 class="ttl2"><span class="color-primary d-block">旬で人気の記事ランキング</span><span>RANKING</span></h2>
 <ul class="post-list ranking-list">
 <?php
 $no = 1;
@@ -100,9 +103,12 @@ $category = get_the_category();
 <img src="<?php echo $i; ?>" srcset="<?php echo $i; ?> 1x,<?php echo $i_l; ?> 2x" alt="<?php echo $t; ?>">
 </div>
 <div class="txt">
-<?php foreach ($category as $key => $val): ?>
-<span class="d-i-block color-white bg-primary"><?php echo $val->cat_name; ?></span>
-<?php break; endforeach; ?>
+<?php
+$posttags = get_the_tags();
+if ($posttags):
+foreach ($posttags as $tag): ?>
+<span class="d-i-block color-white bg-primary"><?php echo $tag->name; ?></span>
+<?php endforeach; endif ?>
 <h3><?php echo $t; ?></h3>
 </div>
 </a>

@@ -1,3 +1,73 @@
+.common-bg-campaign {
+  overflow: hidden;
+  background: url("../images/bg_cta.png");
+
+  .ttl-ft-campaign01 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    @include media-md() {
+      margin: 0 0 15px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+
+  .common-box-campaign p {
+    margin-bottom: 2rem;
+    @include media-md() {
+      font-size: 0.8rem;
+    }
+  }
+
+  .btn-campaign {
+    text-align: left;
+
+    a {
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 15px 55px;
+      min-width: 430px;
+      background: $secondary;
+      text-align: center;
+      font-size: $font-size-base*0.9;
+      font-weight: bold;
+      color: $white;
+      box-shadow: 0 4px 0 $primary;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      @include media-md() {
+        padding: 10px 25px;
+        min-width: inherit;
+        width: 100%;
+        min-width: inherit;
+      }
+    }
+  }
+
+  .common-campaign-phone {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160px;
+    height: auto;
+    @include media-md() {
+      position: static;
+      width: 100%;
+      height: 300px;
+      margin-top: 2rem;
+      box-sizing: border-box;
+      padding: 0 40px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 #footer {
   border-top: solid 2px $primary;
 }
@@ -7,9 +77,20 @@ footer {
     margin: 0 auto $font-size-base*2;
   }
 
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: $font-size-base*0.9;
+    margin-left: $font-size-base*0.5;
+    font-weight: normal;
+    color: #1e276f;
+    padding-top: $font-size-base*0.5;
+  }
+
   img {
-    width: 200px;
-    height: auto;
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 

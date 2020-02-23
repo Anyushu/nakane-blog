@@ -30,6 +30,18 @@
     }
   }
 
+  .wp-block-image {
+    margin-bottom: $font-size-base;
+
+    figure {
+      margin: 0 auto;
+
+      figcaption {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   h2 {
     position: relative;
     font-size: $font-size-base*1.5;
@@ -57,17 +69,6 @@
       content: '●';
       margin-right: $font-size-base*0.5;
     }
-  }
-
-  .aligncenter,
-  img {
-    display: block;
-    margin: $font-size-base auto $font-size-base*2;
-  }
-
-  img {
-    margin: $font-size-base*2 auto;
-    transition: 0.3s;
   }
 
   a:hover img {
@@ -277,6 +278,7 @@
     display: inline-block;
     vertical-align: middle;
     padding: $font-size-base*0.2 $font-size-base*0.5;
+    font-size: $font-size-base*0.875;
   }
 }
 

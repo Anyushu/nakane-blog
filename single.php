@@ -55,7 +55,7 @@ $tags = get_the_tags();
 <?php endif; ?>
 
 <div class="sns-share mt-3 mb-3">
-<p class="mb-1 txt-c sns-share-str">この記事が気に入ったら<span>SNSでシェアしよう！</span></p>
+<p class="mb-1 txt-c sns-share-str">この記事が参考になったら<span>SNSでシェアくださいませ</span></p>
 <ul class="txt-c">
 <li class="fb">
 <a href="https://www.facebook.com/sharer.php?src=bm&u=<?php echo $p; ?>&t=<?php echo $t; ?>" target="_blank">
@@ -110,9 +110,12 @@ $category = get_the_category();
 <img src="<?php echo $i; ?>" srcset="<?php echo $i; ?> 1x,<?php echo $i_l; ?> 2x" alt="<?php echo $t; ?>">
 </div>
 <div class="txt">
-<?php foreach ($category as $key => $val): ?>
-<span class="d-i-block color-white bg-primary mr-05"><?php echo $val->cat_name; ?></span>
-<?php endforeach; ?>
+<?php
+$posttags = get_the_tags();
+if ($posttags):
+foreach ($posttags as $tag): ?>
+<span class="d-i-block color-white bg-primary"><?php echo $tag->name; ?></span>
+<?php endforeach; endif ?>
 <h3><?php echo $t; ?></h3>
 </div>
 </a>
