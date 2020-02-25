@@ -1,5 +1,5 @@
 .post-inner {
-  font-size: $font-size-base*0.9;
+  font-size: $font-size-base;
   overflow-wrap: break-word;
 
   .wp-video {
@@ -278,7 +278,7 @@
     display: inline-block;
     vertical-align: middle;
     padding: $font-size-base*0.2 $font-size-base*0.5;
-    font-size: $font-size-base*0.875;
+    font-size: $font-size-base*0.8;
   }
 }
 

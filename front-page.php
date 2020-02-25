@@ -5,7 +5,7 @@ get_header(); ?>
 <section id="mv" class="sec">
 <div class="wrap">
 <div class="inner">
-<h2 class="mincho w-normal">中根クリーニングLaboが運営するBLOG</h2>
+<h2 class="mincho w-normal">中根クリーニングLaboBLOG</h2>
 <?php get_search_form(); ?>
 <div class="search-tag mt-2">
 <span class="mr-1">HOT WORD</span>
@@ -77,7 +77,7 @@ foreach ($posttags as $tag): ?>
 
 <section id="ranking" class="sec bg-gray-a">
 <div class="wrap">
-<h2 class="ttl2"><span class="color-primary d-block">旬で人気の記事ランキング</span><span>RANKING</span></h2>
+<h2 class="ttl2"><span class="color-primary d-block">人気記事ランキング</span><span>RANKING</span></h2>
 <ul class="post-list ranking-list">
 <?php
 $no = 1;

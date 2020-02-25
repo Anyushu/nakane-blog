@@ -27,7 +27,7 @@ if (has_post_thumbnail()) {
 <a href="<?php echo $p; ?>">
 <img src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
 <div class="txt">
-<p class="color-primary"><span>No.<?php echo $no; ?></span></p>
+<p class="color-gold"><span>No.<?php echo $no; ?></span></p>
 <h4><?php echo $t; ?></h4>
 </div>
 </a>
