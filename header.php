@@ -9,12 +9,12 @@ $wp_url = get_template_directory_uri();
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <?php wp_head(); ?>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146901112-2"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146901112-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'UA-146901112-2');
+  gtag('config', 'UA-146901112-1');
 </script>
 </head>
 <body class="drawer drawer--right">
@@ -50,7 +50,6 @@ if (!is_home() && !is_front_page()) {
 </button>
 <nav class="sp-only sp-mneu drawer-nav bg-sky color-white bg-primary" role="navigation">
 <ul class="drawer-menu">
-<li class="mb-2"><a href="https://www.nakanecleaninglabo.com/" target="_blank" class="btn-2">中根クリーニングへのご依頼はこちら</a></li>
 <?php
 $args = [
   'orderby' => 'ID',
@@ -81,6 +80,7 @@ if (has_post_thumbnail()) {
 <li class="mr-1 d-i-block"><a href="https://twitter.com/intent/tweet?url=<?php echo $now_link; ?>&text=<?php echo $now_title; ?>" target="_blank"><i class="fab fa-twitter"></i></a></li>
 <li class="d-i-block"><a href="http://www.pinterest.com/pin/create/button/?url=<?php echo $now_link; ?>&media=<?php echo $i_l; ?>&description=" target="_blank"><i class="fab fa-pinterest"></i></a></li>
 </ul></li>
+<li class="mt-2"><a href="https://www.nakanecleaninglabo.com/" target="_blank" class="btn-2">中根クリーニングへのご依頼はこちら</a></li>
 </ul>
 </nav>
 </div>
